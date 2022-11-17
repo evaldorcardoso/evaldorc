@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: evaldorc-static-site
+    build: .
+    container_name: evaldorc-static-site
+    restart: always
+    ports:
+      - "80:80"
